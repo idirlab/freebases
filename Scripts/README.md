@@ -2,7 +2,7 @@
 
 parse_triples.sh script is used for URI simplification. 
 
-FBDataDump.sh is a script that runs parse_triples.sh and creates different tables from Freebase dataset. For example, tables for domains, types, properties, and entities. 
+FBDataDump.sh is a script that runs parse_triples.sh and creates different MySQL tables from Freebase dataset. For example, tables for domains, types, properties, and entities. 
 
 After running FBDataDump.sh, you may want to run one of the fours scripts provided for each variants. All these fours scripts, detach the subject matter triples form the metadata and administrative triples. In addition, all these scripts create a type system for the final dataset. 
 
