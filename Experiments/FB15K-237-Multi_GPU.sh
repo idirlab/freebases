@@ -1,6 +1,6 @@
 
 ###FB15K-237-TransE_l2:
-dglke_train --model_name TransE_l2 --dataset FB15k --batch_size 1000 --log_interval 1000 \
+dglke_train --model_name TransE_l2 --dataset FB15k-237 --batch_size 1000 --log_interval 1000 \
 --neg_sample_size 200 --regularization_coef=1e-9 --hidden_dim 400 --gamma 19.9 \
 --lr 0.25 --batch_size_eval 16 --test -adv --gpu 0 --max_step 3000 --mix_cpu_gpu --num_thread 4 \
 --num_proc 8 --gpu 0 1 --async_update --rel_part --force_sync_interval 1000--delimiter ,	
