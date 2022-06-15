@@ -2,7 +2,7 @@
 
 We have provided four variants of Freebase dataset. The detailed statistics of these four variants are shown in the table below. 
 
-![This is an image](https://raw.githubusercontent.com/idirlab/freebases/main/Datasets/DatasetsStatistics.png?token=GHSAT0AAAAAABM7PLAIGL5F2AULSPLMERLIYVKIFOA)
+![This is an image](https://github.com/idirlab/freebases/blob/main/Datasets/DatasetsStatistics.png?raw=true)
 
 If you need to remove all the reverse triples as well as all the CVT nodes, you can use FB1 dataset.
 
