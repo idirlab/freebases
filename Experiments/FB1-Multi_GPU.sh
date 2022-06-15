@@ -5,7 +5,15 @@ dglke_train --model_name TransE_l2 --dataset Freebase --data_path ./data --forma
 --neg_sample_size_eval 1000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --no_save_em --delimiter ,
 
 ################## Script Result #################
-
+#training takes 5023.488492012024 seconds				
+#-------------- Test result --------------				
+#Test average MRR : 0.6864382098795799				
+#Test average MR : 41.81036077167216				
+#Test average HITS@1 : 0.6257576140868235				
+#Test average HITS@3 : 0.7197621933003103				
+#Test average HITS@10 : 0.7996085141889765				
+#-----------------------------------------				
+#testing takes 1165.175 seconds
 ##################################################
 
 ###FB1-DistMult:
@@ -15,7 +23,15 @@ dglke_train --model_name DistMult --dataset Freebase --data_path ./data --format
 --eval_interval 100000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --num_thread 4 --no_save_emb --delimiter ,
 
 ################## Script Result #################
-
+#training takes 4481.721693754196 seconds				
+#-------------- Test result --------------				
+#Test average MRR : 0.7096351943255073				
+#Test average MR : 69.38829734691518				
+#Test average HITS@1 : 0.6703651926771133				
+#Test average HITS@3 : 0.7306864122159474				
+#Test average HITS@10 : 0.780517281672224				
+#-----------------------------------------				
+#testing takes 1579.544 seconds
 ##################################################
 
 ###FB1-ComplEx:
@@ -25,7 +41,15 @@ dglke_train --model_name ComplEx --dataset Freebase --data_path ./data --format 
 --max_step 360000 --neg_sample_size_eval 1000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --no_save_emb --delimiter ,
 
 ################## Script Result #################
-
+#training takes 5881.848418712616 seconds				
+#-------------- Test result --------------				
+#Test average MRR : 0.7179405798869858				
+#Test average MR : 68.7989690545715				
+#Test average HITS@1 : 0.6812835891974892				
+#Test average HITS@3 : 0.7374767304961805				
+#Test average HITS@10 : 0.7831064406131745				
+#-----------------------------------------				
+#testing takes 1183.343 seconds	
 ##################################################
 
 ###FB1-TransR:
@@ -36,11 +60,27 @@ dglke_train --model_name TransR --dataset Freebase --data_path ./data --format u
 --no_save_emb --delimiter ,
 
 ################## Script Result #################
-
+#training takes 49449.76291227341 seconds			
+#-------------- Test result --------------			
+#Test average MRR : 0.6363734517471373			
+#Test average MR : 52.251309838161504			
+#Test average HITS@1 : 0.5842527698539663			
+#Test average HITS@3 : 0.6597560858084537			
+#Test average HITS@10 : 0.7330448838412068			
+#-----------------------------------------			
+#testing takes 1595.097 seconds			
 ##################################################
 
 ###FB1-RotatE:
 
 ################## Script Result #################
-
+#training takes 25748.069131851196 seconds			
+#-------------- Test result --------------			
+#Test average MRR : 0.45551810443922747			
+#Test average MR : 143.6880176912476			
+#Test average HITS@1 : 0.3999739598391252			
+#Test average HITS@3 : 0.4778791142249549			
+#Test average HITS@10 : 0.5598818294688691			
+#-----------------------------------------			
+#testing takes 1267.891 seconds			
 ##################################################
