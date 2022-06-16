@@ -1,6 +1,6 @@
 ## Experiments and Results
 
-We conducted all the link prediction experiments on four datasets using DGL-KE framework (Zheng et al.,[2020](https://arxiv.org/pdf/2004.08532.pdf)). 
+We conducted all the link prediction experiments on four datasets using DGL-KE framework ([Zheng et al.,2020](https://arxiv.org/pdf/2004.08532.pdf)). 
 
 In the tables below, an upward/downward arrow beside a measure indicates that methods with greater/smaller values by that measure possess higher accuracy.
 
