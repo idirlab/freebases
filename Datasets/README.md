@@ -16,7 +16,7 @@ To keep both CVT nodes and reverse triples, you can use FB4 dataset.
 
 For each dataset, we made three kinds of files available:
 - Metadata files: 
-  - object_types: Each row maps the MID of a Freebase object to a type it belongs. 
+  - object_types: Each row maps the MID of a Freebase object to a type it belongs to. 
   - object_names: Each row maps the MID of a Freebase object to its textual label.
   - object_ids: Each row maps the MID of a Freebase object to its friendly identifier.
   - domains_id_label: Each row maps the MID of a Freebase domain to its label.
