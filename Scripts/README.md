@@ -14,7 +14,7 @@ To keep the CVT nodes but to remove the reverse triples, you can run FB3.sh.
 
 To keep both CVT nodes and reverse triples, you can run script FB4.sh.
 
-Command to run FBx.sh:
+Command to run FBx.sh:  
 ./FBDataDump.sh mysql_username mysql_password
 
 Command to run FBx.sh, where x ∈ {1,2,3,4}:  
