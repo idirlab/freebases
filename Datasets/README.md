@@ -6,13 +6,13 @@ The detailed statistics of these four variants are shown in the table below.
 
 ![This is an image](https://github.com/idirlab/freebases/blob/main/Datasets/DatasetsStatistics.png?raw=true)
 
-If you need to remove all the reverse triples as well as all the CVT nodes, you can use FB1 dataset.
+If you need to remove all the reverse triples as well as all the CVT nodes, you can use dataset FB1.
 
-To keep the reverse triples but to remove the CVT nodes, you can use FB2 dataset.
+To keep the reverse triples but to remove the CVT nodes, you can use dataset FB2.
 
-To keep the CVT nodes but to remove the reverse triples, you can use FB3 dataset.
+To keep the CVT nodes but to remove the reverse triples, you can use dataset FB3.
 
-To keep both CVT nodes and reverse triples, you can use FB4 dataset.
+To keep both CVT nodes and reverse triples, you can use dataset FB4.
 
 For each dataset, we made three kinds of files available:
 - Metadata files: 
