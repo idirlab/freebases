@@ -1,6 +1,6 @@
 ## Datasets
 
-**We have provided four variants of Freebase dataset. These datasets can be downloaded from this [link](https://www.dropbox.com/s/6dfwropwpllhnff/fbVar.zip?dl=0).**
+We have provided four variants of Freebase dataset. **These datasets can be downloaded from this [link](https://www.dropbox.com/s/6dfwropwpllhnff/fbVar.zip?dl=0).**
 
 The detailed statistics of these four variants are shown in the table below. 
 
