@@ -1,3 +1,9 @@
+#!/bin/bash
+
+set -e
+
+USERNAME=$1
+PASSWORD=$2
 
 #removing triples
 mysql -u $USERNAME -p$PASSWORD freebase -e "CREATE TABLE freebase_clean SELECT * FROM freebase WHERE subject REGEXP '^/m/|^/g/' AND object REGEXP '^/m/|^/g/' AND predicate NOT REGEXP '^/common/|^/key/|^/type/|^/kg/|^/base/|^/freebase/|^/dataworld/|^/topic_server/|^/user/|^/pipeline/|^/kp_lw/|^rdf|^owl'"
