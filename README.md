@@ -6,5 +6,5 @@ In this work we laid out a comprehensive analysis of the challenges associated w
 The details of datasets and data preprocessing scripts are made available in this repository.
 The data can be downloaded from this [link](https://www.dropbox.com/s/6dfwropwpllhnff/fbVar.zip?dl=0). 
 
-Also, [Freebase Data Dumps](https://developers.google.com/freebase/data) are provided free of charge for any purpose with regular updates by Google. They are distributed, like Freebase itself, under the Creative Commons Attribution (aka CC-BY) and use is subject to the Terms of Service. The Freebase/Wikidata ID mappings are provided under CC0 and can be used without restrictions.
+Also, [Freebase Data Dumps](https://developers.google.com/freebase/data) are provided free of charge for any purpose with regular updates by Google. They are distributed, like Freebase itself, under the [Creative Commons Attribution (aka CC-BY)](http://creativecommons.org/licenses/by/2.5/) and use is subject to the [Terms of Service](https://developers.google.com/freebase/terms). The Freebase/Wikidata ID mappings are provided under CC0 and can be used without restrictions.
 
