@@ -5,13 +5,17 @@ set -e
 USERNAME=$1
 PASSWORD=$2
 
-#wget http://commondatastorage.googleapis.com/freebase-public/rdf/freebase-rdf-latest.gz
-#gunzip freebase-rdf-latest.gz
-./parse_triples.sh /idir-nfs/freebase/freebase-rdf-latest
+#downloading raw data
+wget http://commondatastorage.googleapis.com/freebase-public/rdf/freebase-rdf-latest.gz
+gunzip freebase-rdf-latest.gz
 
+#URI simplification
+./parse_triples.sh freebase-rdf-latest
+
+#load raw data into table
 mysql -u $USERNAME -p$PASSWORD  -e "CREATE DATABASE freebase"
 mysql -u $USERNAME -p$PASSWORD freebase -e "CREATE TABLE freebase(subject VARCHAR(255), predicate VARCHAR(255), object TEXT)"
-mysql -u $USERNAME -p$PASSWORD freebase -e "LOAD DATA LOCAL INFILE '/idir-nfs/freebase/freebase-rdf-latest_formatted' INTO TABLE freebase"
+mysql -u $USERNAME -p$PASSWORD freebase -e "LOAD DATA LOCAL INFILE 'freebase-rdf-latest_formatted' INTO TABLE freebase"
 mysql -u $USERNAME -p$PASSWORD freebase -e "UPDATE freebase SET object=REPLACE(object, '.', '/') WHERE object NOT LIKE '\"%'"
 
 #create tables for object names, object ids, object types, mediator types, reverse types
