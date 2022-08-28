@@ -3,7 +3,21 @@
 
 ## Overview
 
-This repository contains the dataset, preprocessing scripts, and experiment results to the paper [Creating Variants of Freebase for Robust Development of Intelligent Tasks on Knowledge Graphs](https://openreview.net/pdf?id=ikw7gqAGz7A), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Mediator Nodes, Reverse Triples, and Metadata/Administrative Data) of Freebase, a large-scale, open-domain knowledge graph, on intelligent tasks such as link prediction, graph query system, and graph-to-text generation. 
+This repository contains the dataset, preprocessing scripts, and experiment results to the paper [Creating Variants of Freebase for Robust Development of Intelligent Tasks on Knowledge Graphs](https://openreview.net/pdf?id=ikw7gqAGz7A), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Reverse Triples, Mediator Nodes, and Type System) of Freebase, a large-scale, open-domain knowledge graph, on intelligent tasks such as link prediction, graph query system, and graph-to-text generation. 
+
+**Reverse Triples**
+
+When a new fact was included into Freebase, it would be added as a pair of reverse triples. For instance, *(A Room With A View,167
+/film/film/directed_by, James Ivory)* and *(James Ivory, film/director/film, A Room With A View)* form a pair of reverse triples. They have the same semantic meaning.
+
+**Mediator Nodes**
+
+Mediator nodes, also called CVT nodes, are used in Freebase to represent n-ary relationships. The figure below shows a CVT node connected to an award, a nominee, and a work. This or similar approach is necessary for accurate modeling of the real-world.
+![image](https://user-images.githubusercontent.com/44850160/187091882-0164271e-423e-4098-9af6-2105dd95f4f5.png)
+
+**Type System**
+
+Freebase categorizes each topic into one or more types and each type into one domain. Furthermore, the triple instances satisfy pseudo constraints as if they are governed by a rigorous type system. Specifically, 1) given a node, its types set up constraints on the labels of its properties; the type segment in the label of an edge (which is different from the edge type) in most cases belongs to one of the types of the subject node. 2) Given an edge type and its edge instances, there is almost a function that maps from the edge type to a type that all subjects in the edge instances belong to, and similarly almost such a function for objects. 
 
 ## Dataset
 
