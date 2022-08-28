@@ -228,6 +228,7 @@ The results of these experiments on FB1, FB2, FB3, and FB4 dataset are shown in 
 </tbody>
 </table>
 
+The results of these experiments on FB15K and FB15K-237 dataset are shown in the table below.
 
 
 
