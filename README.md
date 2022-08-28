@@ -228,7 +228,7 @@ The results of these experiments on FB1, FB2, FB3, and FB4 dataset are shown in 
 </tbody>
 </table>
 
-The results of these experiments on FB15K and FB15K-237 dataset are shown in the table below.
+We also provide the results of type filtering – removing type inconsistent results from the ranked list to showcase how type system can help evaluating embedding models on the link prediction task. The results are shown in the table below.
 
 <table class="tg">
 <thead>
