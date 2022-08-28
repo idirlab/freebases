@@ -499,7 +499,7 @@ The experiments on type filtering and triple classification were done using LibK
 
 ## Scripts
 
-### Data Cleaning Scripts
+### Data Preparation Scripts
 
 - **parse_triples.sh** script is used for URI simplification.
 
