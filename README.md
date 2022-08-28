@@ -536,5 +536,5 @@ The experiments on type filtering and triple classification were done using LibK
 
 The dataset and code is made available under the [CC0 1.0 Universal](https://github.com/idirlab/freebases/blob/main/LICENSE).
 
-Note: [Freebase Data Dumps](http://commondatastorage.googleapis.com/freebase-public/rdf/freebase-rdf-latest.gz) is provided free of charge for any purpose. It is distributed under the [Creative Commons Attribution (aka CC-BY)](http://creativecommons.org/licenses/by/2.5/) and the usage is subject to the [Terms of Service](https://developers.google.com/freebase/terms). 
+Note: [Freebase Data Dumps](https://developers.google.com/freebase) is provided free of charge for any purpose. It is distributed under the [Creative Commons Attribution (aka CC-BY)](http://creativecommons.org/licenses/by/2.5/) and the usage is subject to the [Terms of Service](https://developers.google.com/freebase/terms). 
 
