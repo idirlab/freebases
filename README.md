@@ -112,7 +112,7 @@ The dataset consists of the four variants of Freebase dataset as well as related
       - The identifier "/type/property/unique" in our dataset has URI <http://rdf.freebase.com/ns/type.property.unique> in the original Freebase RDF dataset.
 
 
-## Experiments
+## Experiments & Results
 
 We conducted all the link prediction experiments on four datasets using DGL-KE framework ([Zheng et al.,2020](https://arxiv.org/pdf/2004.08532.pdf)). 
 
