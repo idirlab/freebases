@@ -11,47 +11,51 @@ Four clean variants of Freebase dataset are provided by inclusion/exclusion of v
 
 ### Dataset Statistics
 
-<table>
-    <tr>
-        <td>variant</td>
-        <td>CVT nodes</td>
-        <td>reverse triples</td>
-        <td>#entities</td>
-        <td>#properties</td>
-        <td>#triples</td>
-    </tr>
-    <tr>
-        <td>FB1</td>
-        <td>removed</td>
-        <td>removed</td>
-        <td>39,732,008</td>
-        <td>2,891</td>
-        <td>103,324,039</td>
-    </tr>
-    <tr>
-        <td>FB2</td>
-        <td>removed</td>
-        <td>retained</td>
-        <td>39,745,618</td>
-        <td>4,894</td>
-        <td>235,307,422</td>
-    </tr>
-    <tr>
-        <td>FB3</td>
-        <td>retained</td>
-        <td>removed</td>
-        <td>59,894,890</td>
-        <td>2,641</td>
-        <td>134,213,735</td>
-    </tr>
-    <tr>
-        <td>FB4</td>
-        <td>retained</td>
-        <td>retained</td>
-        <td>59,896,902</td>
-        <td>4,425</td>
-        <td>244,112,599</td>
-    </tr>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">variant</th>
+    <th class="tg-7btt">CVT nodes</th>
+    <th class="tg-7btt">reverse triples</th>
+    <th class="tg-7btt">#entities</th>
+    <th class="tg-7btt">#properties</th>
+    <th class="tg-7btt">#triples</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">FB1</td>
+    <td class="tg-c3ow">removed</td>
+    <td class="tg-c3ow">removed</td>
+    <td class="tg-c3ow">39,732,008</td>
+    <td class="tg-c3ow">2,891</td>
+    <td class="tg-c3ow">103,324,039</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FB2</td>
+    <td class="tg-c3ow">removed</td>
+    <td class="tg-c3ow">retained</td>
+    <td class="tg-c3ow">39,745,618</td>
+    <td class="tg-c3ow">4,894</td>
+    <td class="tg-c3ow">235,307,422</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FB3</td>
+    <td class="tg-c3ow">retained</td>
+    <td class="tg-c3ow">removed</td>
+    <td class="tg-c3ow">59,894,890</td>
+    <td class="tg-c3ow">2,641</td>
+    <td class="tg-c3ow">134,213,735</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FB4</td>
+    <td class="tg-c3ow">retained</td>
+    <td class="tg-c3ow">retained</td>
+    <td class="tg-c3ow">59,896,902</td>
+    <td class="tg-c3ow">4,425</td>
+    <td class="tg-c3ow">244,112,599</td>
+  </tr>
+</tbody>
 </table>
 
 ### Dataset Details
