@@ -320,6 +320,9 @@ The results of these experiments on FB15K and FB15K-237 dataset are shown in the
 </table>
 
 
+Another way of evaluation embedding models is to find their performance on triple classification. This task is the binary classification of triples regarding whether they are true or false facts. The results of our triple classification task are shown in the tables below.
+
+
 
 
 
