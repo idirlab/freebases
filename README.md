@@ -5,6 +5,8 @@
 
 This repository contains the dataset, preprocessing scripts, and experiment results to the paper [Creating Variants of Freebase for Robust Development of Intelligent Tasks on Knowledge Graphs](https://openreview.net/pdf?id=ikw7gqAGz7A), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Reverse Triples, Mediator Nodes, and Type System) of Freebase, a large-scale, open-domain knowledge graph, on intelligent tasks such as link prediction, graph query system, and graph-to-text generation. 
 
+Freebase is amongst the largest public cross-domain KGs that store common facts. It possesses several data modeling idiosyncrasies rarely found in comparable datasets such as Wikidata, YAGO, and so on. Though closed in 2015, Freebase still serves as an important knowledge graph in intelligent tasks. We checked all full-length papers that use datasets commonly used for link prediction and were published in 12 top conferences during their latest versions (10 conferences in 2022, and 2 conferences in 2021). The 12 conferences are AAAL, IJCAI, WWW, KDD, ICML, ACL, EMNLP, NAACL, SIGIR, NeurIPS, SIGMOD, and VLDB. That amounts to 63 papers. 57 out of the 63 papers used datasets produced from Freebase, while only 9 used datasets from Wikidata. The papers and the datasets used in the papers are listed in file **papers.xlsx**. 
+
 **Reverse Triples**
 
 When a new fact was included into Freebase, it would be added as a pair of reverse triples. For instance, *(A Room With A View,167
@@ -74,57 +76,65 @@ Four clean variants of Freebase dataset are provided by inclusion/exclusion of v
 
 ### Dataset Details
 The dataset consists of the four variants of Freebase dataset as well as related mapping/support files. For each variant, we made three kinds of files available:
-- Subject matter triples file: fbx, where x ∈ 1, 2, 3, 4 (one file for each variant). Subject matter triples are the triples belong to subject matters domains—domains describing real-world facts.
-  - Example
-    - >/g/112yfy2xr, /music/album/release_type, /m/02lx2r
-  - Explaination
-    - "/g/112yfy2xr" and "/m/02lx2r" are the MID of the subject entity and object entity, respectively. "/music/album/release_type" is the realtionship between the two entities. 
-- Type system file:
-  - freebase_endtypes: Each row maps an edge type to its required subject type and object type.
+- **Subject matter triples file**
+  - *fbx* 
+    where x ∈ 1, 2, 3, 4 (one file for each variant). Subject matter triples are the triples belong to subject matters domains—domains describing real-world facts.
+    - Example
+      - >/g/112yfy2xr, /music/album/release_type, /m/02lx2r
+    - Explaination
+      - "/g/112yfy2xr" and "/m/02lx2r" are the MID of the subject entity and object entity, respectively. "/music/album/release_type" is the realtionship between the two entities. 
+- **Type system file**
+  - *freebase_endtypes*: Each row maps an edge type to its required subject type and object type.
     - Example
       - > 92, 47178872, 90 
     - Explanation
       - "92" and "90" are the type id of the subject and object which has the relationship id "47178872".
-- Metadata files: 
-  - object_types: Each row maps the MID of a Freebase object to a type it belongs to. 
+- **Metadata files**
+  - *object_types*: Each row maps the MID of a Freebase object to a type it belongs to. 
     - Example
       - >/g/11b41c22g, /type/object/type, /people/person
     - Explanation
       - The entity with MID "/g/11b41c22g" has a type "/people/person"
-  - object_names: Each row maps the MID of a Freebase object to its textual label.
+  - *object_names*: Each row maps the MID of a Freebase object to its textual label.
     - Example
       - >/g/11b78qtr5m, /type/object/name, "Viroliano Tries Jazz"@en
     - Explanation
       - The entity with MID "/g/11b78qtr5m" has name "Viroliano Tries Jazz" in English.
-  - object_ids: Each row maps the MID of a Freebase object to its user-friendly identifier.
+  - *object_ids*: Each row maps the MID of a Freebase object to its user-friendly identifier.
     - Example
       - >/m/05v3y9r, /type/object/id, "/music/live_album/concert"
     - Explanation
       - The entity with MID "/m/05v3y9r" can be interpreted by human as a music concert live album.
-  - domains_id_label: Each row maps the MID of a Freebase domain to its label.
+  - *domains_id_label*: Each row maps the MID of a Freebase domain to its label.
     - Example
       - >/m/05v4pmy, geology, 77
     - Explanation
       - The object with MID "/m/05v4pmy" in Freebase is the domain "geology", and has id "77" in our dataset.
-  - types_id_label: Each row maps the MID of a Freebase type to its label.
+  - *types_id_label*: Each row maps the MID of a Freebase type to its label.
     - Example
       - >/m/01xljxh, /government/political_party, 147
     - Explanation
       - The object with MID "/m/01xljxh" in Freebase is the type "/government/political_party", and has id "147" in our dataset.
-  - entities_id_label: Each row maps the MID of a Freebase entity to its label.
+  - *entities_id_label*: Each row maps the MID of a Freebase entity to its label.
     - Example
       - >/g/11b78qtr5m, Viroliano Tries Jazz, 2234
     - Explanation
       - The entity with MID "/g/11b78qtr5m" in Freebase is "Viroliano Tries Jazz", and has id "2234" in our dataset.
-  - properties_id_label: Each row maps the MID of a Freebase property to its label.
+  - *properties_id_label*: Each row maps the MID of a Freebase property to its label.
     - Example
       - >/m/010h8tp2, /comedy/comedy_group/members, 47178867
     - Explanation
       - The object with MID "/m/010h8tp2" in Freebase is a property(relation/edge), it has label "/comedy/comedy_group/members" and has id "47178867" in our dataset.
-  - uri_original2simplified and uri_simplified2original: The mapping between original URI and simplified URI and the mapping between simplified URI and original URI repectively.
+  - *uri_original2simplified* and *uri_simplified2original*: The mapping between original URI and simplified URI and the mapping between simplified URI and original URI repectively.
     - Example
-      - uri_original2simplified >"<http://rdf.freebase.com/ns/type.property.unique>": "/type/property/unique"
-      - uri_simplified2original >"/type/property/unique": "<http://rdf.freebase.com/ns/type.property.unique>"
+      - *uri_original2simplified*
+        - >"<http://rdf.freebase.com/ns/type.property.unique>": "/type/property/unique" 
+        
+        (the URI directs to nothing because Freebase has been closed)
+      - *uri_simplified2original*
+        - >"/type/property/unique": "<http://rdf.freebase.com/ns/type.property.unique>" 
+        
+        (the URI directs to nothing because Freebase has been closed)
     - Explanation
       - The URI "<http://rdf.freebase.com/ns/type.property.unique>" in the original Freebase RDF dataset is simplified into "/type/property/unique" in our dataset. 
       - The identifier "/type/property/unique" in our dataset has URI <http://rdf.freebase.com/ns/type.property.unique> in the original Freebase RDF dataset.
