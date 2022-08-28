@@ -11,6 +11,49 @@ Four clean variants of Freebase dataset are provided by inclusion/exclusion of v
 
 ### Dataset Statistics
 
+<table>
+    <tr>
+        <td>variant</td>
+        <td>CVT nodes</td>
+        <td>reverse triples</td>
+        <td>#entities</td>
+        <td>#properties</td>
+        <td>#triples</td>
+    </tr>
+    <tr>
+        <td>FB1</td>
+        <td>removed</td>
+        <td>removed</td>
+        <td>39,732,008</td>
+        <td>2,891</td>
+        <td>103,324,039</td>
+    </tr>
+    <tr>
+        <td>FB2</td>
+        <td>removed</td>
+        <td>retained</td>
+        <td>39,745,618</td>
+        <td>4,894</td>
+        <td>235,307,422</td>
+    </tr>
+    <tr>
+        <td>FB3</td>
+        <td>retained</td>
+        <td>removed</td>
+        <td>59,894,890</td>
+        <td>2,641</td>
+        <td>134,213,735</td>
+    </tr>
+    <tr>
+        <td>FB4</td>
+        <td>retained</td>
+        <td>retained</td>
+        <td>59,896,902</td>
+        <td>4,425</td>
+        <td>244,112,599</td>
+    </tr>
+</table>
+
 ### Dataset Details
 The dataset consists of the four variants of Freebase dataset as well as related mapping/support files. For each variant, we made three kinds of files available:
 - Subject matter triples file: fbx, where x ∈ 1, 2, 3, 4 (one file for each variant). Subject matter triples are the triples belong to subject matters domains—domains describing real-world facts.
