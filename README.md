@@ -554,7 +554,14 @@ The experiments on type filtering and triple classification were done using LibK
 
 ### Experiments Scripts
 
+We did expeiments on the four variants of Freebase as well as FB15K and FB-15K-237 using link prediction models like TransE, DistMult, ComplEx, RotatE, etc. The scripts to run the experiments are at ExperimentsScripts/ ending with .sh. An example of running DistMult model on FB1 is as below.
 
+``
+dglke_train --model_name DistMult --dataset Freebase --data_path ./data --format udd_hrt  \
+--data_files entity2id.txt relation2id.txt train.txt valid.txt test.txt  --batch_size 1024 --neg_sample_size 256 --hidden_dim 400 --gamma 143.0 \
+--lr 0.08 --batch_size_eval 1000 --test -adv --mix_cpu_gpu --num_proc 8 --gpu 0 1 --max_step 300000 --neg_sample_size_eval 1000 \
+--eval_interval 100000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --num_thread 4 --no_save_emb --delimiter ,
+``
 
 ## License
 
