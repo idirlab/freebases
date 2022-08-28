@@ -13,8 +13,10 @@ The results of these experiments on FB15K and FB15K-237 dataset are shown in the
 ![This is an image](https://github.com/idirlab/freebases/blob/main/Experiments/FB15KvsFB15K-237.png?raw=true)
 
 We also provide the results of type filtering – removing type inconsistent results from the ranked list to showcase how type system can help evaluating embedding models on the link prediction task. The results are shown in the table below. 
-![This is an image](https://github.com/idirlab/freebases/blob/main/Experiments/tf.png?raw=true)
+![This is an image](https://github.com/idirlab/freebases/blob/main/Experiments/tf1.png?raw=true)
 
 Another way of evaluation embedding models is to find their performance on triple classification. This task is the binary classification of triples regarding whether they are true or false facts. The results of our triple classification task are shown in the tables below.
 ![This is an image](https://github.com/idirlab/freebases/blob/main/Experiments/tct.png?raw=true)
 ![This is an image](https://github.com/idirlab/freebases/blob/main/Experiments/tch.png?raw=true)
+
+The experiments on type filtering and triple classification were done using LibKGE framework. ([Broscheit et al.,2020](https://aclanthology.org/2020.emnlp-demos.22.pdf))
