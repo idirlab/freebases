@@ -230,6 +230,94 @@ The results of these experiments on FB1, FB2, FB3, and FB4 dataset are shown in 
 
 The results of these experiments on FB15K and FB15K-237 dataset are shown in the table below.
 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-7btt" colspan="4">Original Results (LibKGE)</th>
+    <th class="tg-7btt" colspan="4">Type Filtering</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-7btt">Model</td>
+    <td class="tg-c3ow">FMRR</td>
+    <td class="tg-c3ow">FH1</td>
+    <td class="tg-c3ow">FH3</td>
+    <td class="tg-c3ow">FH10</td>
+    <td class="tg-c3ow">FMRR</td>
+    <td class="tg-c3ow">FH1</td>
+    <td class="tg-c3ow">FH3</td>
+    <td class="tg-c3ow">FH10</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">RESCAL</td>
+    <td class="tg-c3ow">0.356</td>
+    <td class="tg-c3ow">0.263</td>
+    <td class="tg-c3ow">0.393</td>
+    <td class="tg-c3ow">0.541</td>
+    <td class="tg-c3ow">0.357</td>
+    <td class="tg-c3ow">0.263</td>
+    <td class="tg-c3ow">0.393</td>
+    <td class="tg-c3ow">0.541</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">TransE</td>
+    <td class="tg-c3ow">0.313</td>
+    <td class="tg-c3ow">0.221</td>
+    <td class="tg-c3ow">0.347</td>
+    <td class="tg-c3ow">0.497</td>
+    <td class="tg-c3ow">0.317</td>
+    <td class="tg-c3ow">0.226</td>
+    <td class="tg-c3ow">0.351</td>
+    <td class="tg-c3ow">0.5</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">DistMult</td>
+    <td class="tg-c3ow">0.343</td>
+    <td class="tg-c3ow">0.25</td>
+    <td class="tg-c3ow">0.378</td>
+    <td class="tg-c3ow">0.531</td>
+    <td class="tg-c3ow">0.344</td>
+    <td class="tg-c3ow">0.25</td>
+    <td class="tg-c3ow">0.38</td>
+    <td class="tg-c3ow">0.532</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">ComplEx</td>
+    <td class="tg-c3ow">0.348</td>
+    <td class="tg-c3ow">0.253</td>
+    <td class="tg-c3ow">0.384</td>
+    <td class="tg-c3ow">0.536</td>
+    <td class="tg-c3ow">0.349</td>
+    <td class="tg-c3ow">0.254</td>
+    <td class="tg-c3ow">0.385</td>
+    <td class="tg-c3ow">0.537</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">ConvE</td>
+    <td class="tg-c3ow">0.339</td>
+    <td class="tg-c3ow">0.248</td>
+    <td class="tg-c3ow">0.369</td>
+    <td class="tg-c3ow">0.521</td>
+    <td class="tg-c3ow">0.339</td>
+    <td class="tg-c3ow">0.248</td>
+    <td class="tg-c3ow">0.37</td>
+    <td class="tg-c3ow">0.522</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">RotatE</td>
+    <td class="tg-c3ow">0.333</td>
+    <td class="tg-c3ow">0.24</td>
+    <td class="tg-c3ow">0.368</td>
+    <td class="tg-c3ow">0.522</td>
+    <td class="tg-c3ow">0.336</td>
+    <td class="tg-c3ow">0.242</td>
+    <td class="tg-c3ow">0.37</td>
+    <td class="tg-c3ow">0.524</td>
+  </tr>
+</tbody>
+</table>
 
 
 
