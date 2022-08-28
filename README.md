@@ -116,13 +116,117 @@ The dataset consists of the four variants of Freebase dataset as well as related
 
 We conducted all the link prediction experiments on four datasets using DGL-KE framework ([Zheng et al.,2020](https://arxiv.org/pdf/2004.08532.pdf)). 
 
-The hyperparameters used for each experiment, its training/test time, and more details can be found in the script provided for each dataset 
-
-In the tables below, an upward/downward arrow beside a measure indicates that methods with greater/smaller values by that measure possess higher accuracy.
+The hyperparameters used for each experiment, its training/test time, and more details can be found in the script provided for each dataset. 
 
 The results of these experiments on FB1, FB2, FB3, and FB4 dataset are shown in the table below. 
-
-
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-c3ow" colspan="4">FB1</th>
+    <th class="tg-c3ow" colspan="4">FB2</th>
+    <th class="tg-c3ow" colspan="4">FB3</th>
+    <th class="tg-c3ow" colspan="4">FB4</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Model</td>
+    <td class="tg-c3ow">MRR</td>
+    <td class="tg-c3ow">MR</td>
+    <td class="tg-c3ow">H1</td>
+    <td class="tg-c3ow">H10</td>
+    <td class="tg-0pky">MRR</td>
+    <td class="tg-0pky">MR</td>
+    <td class="tg-0pky">H1</td>
+    <td class="tg-0pky">H10</td>
+    <td class="tg-0pky">MRR</td>
+    <td class="tg-0pky">MR</td>
+    <td class="tg-0pky">H1</td>
+    <td class="tg-0pky">H10</td>
+    <td class="tg-0pky">MRR</td>
+    <td class="tg-0pky">MR</td>
+    <td class="tg-0pky">H1</td>
+    <td class="tg-0pky">H10</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">TransE</td>
+    <td class="tg-c3ow">0.686</td>
+    <td class="tg-c3ow">41.810</td>
+    <td class="tg-c3ow">0.625</td>
+    <td class="tg-c3ow">0.799</td>
+    <td class="tg-0pky">0.958</td>
+    <td class="tg-0pky">3.857</td>
+    <td class="tg-0pky">0.944</td>
+    <td class="tg-0pky">0.980</td>
+    <td class="tg-0pky">0.431</td>
+    <td class="tg-0pky">50.572</td>
+    <td class="tg-0pky">0.339</td>
+    <td class="tg-0pky">0.623</td>
+    <td class="tg-0pky">0.606</td>
+    <td class="tg-0pky">12.542</td>
+    <td class="tg-0pky">0.515</td>
+    <td class="tg-0pky">0.771</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">DistMult</td>
+    <td class="tg-c3ow">0.709</td>
+    <td class="tg-c3ow">69.388</td>
+    <td class="tg-c3ow">0.670</td>
+    <td class="tg-c3ow">0.780</td>
+    <td class="tg-0pky">0.965</td>
+    <td class="tg-0pky">6.059</td>
+    <td class="tg-0pky">0.956</td>
+    <td class="tg-0pky">0.979</td>
+    <td class="tg-0pky">0.408</td>
+    <td class="tg-0pky">109.193</td>
+    <td class="tg-0pky">0.318</td>
+    <td class="tg-0pky">0.581</td>
+    <td class="tg-0pky">0.818</td>
+    <td class="tg-0pky">19.180</td>
+    <td class="tg-0pky">0.777</td>
+    <td class="tg-0pky">0.890</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ComplEx</td>
+    <td class="tg-c3ow">0.717</td>
+    <td class="tg-c3ow">68.798</td>
+    <td class="tg-c3ow">0.681</td>
+    <td class="tg-c3ow">0.783</td>
+    <td class="tg-0pky">0.970</td>
+    <td class="tg-0pky">5.567</td>
+    <td class="tg-0pky">0.964</td>
+    <td class="tg-0pky">0.981</td>
+    <td class="tg-0pky">0.510</td>
+    <td class="tg-0pky">104.317</td>
+    <td class="tg-0pky">0.439</td>
+    <td class="tg-0pky">0.635</td>
+    <td class="tg-0pky">0.899</td>
+    <td class="tg-0pky">16.937</td>
+    <td class="tg-0pky">0.880</td>
+    <td class="tg-0pky">0.935</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">RotatE</td>
+    <td class="tg-c3ow">0.455</td>
+    <td class="tg-c3ow">143.688</td>
+    <td class="tg-c3ow">0.399</td>
+    <td class="tg-c3ow">0.559</td>
+    <td class="tg-0pky">0.938</td>
+    <td class="tg-0pky">13.513</td>
+    <td class="tg-0pky">0.926</td>
+    <td class="tg-0pky">0.956</td>
+    <td class="tg-0pky">0.198</td>
+    <td class="tg-0pky">195.001</td>
+    <td class="tg-0pky">0.147</td>
+    <td class="tg-0pky">0.292</td>
+    <td class="tg-0pky">0.729</td>
+    <td class="tg-0pky">33.027</td>
+    <td class="tg-0pky">0.683</td>
+    <td class="tg-0pky">0.816</td>
+  </tr>
+</tbody>
+</table>
 
 
 
