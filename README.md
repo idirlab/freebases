@@ -15,6 +15,7 @@ When a new fact was included into Freebase, it would be added as a pair of rever
 **Mediator Nodes**
 
 Mediator nodes, also called CVT nodes, are used in Freebase to represent n-ary relationships. The figure below shows a CVT node connected to an award, a nominee, and a work. This or similar approach is necessary for accurate modeling of the real-world.
+
 ![image](https://user-images.githubusercontent.com/44850160/187091882-0164271e-423e-4098-9af6-2105dd95f4f5.png)
 
 **Type System**
