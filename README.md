@@ -41,10 +41,33 @@ The dataset consists of the four variants of Freebase dataset as well as related
     - Explanation
       - The entity with MID "/m/05v3y9r" can be interpreted by human as a music concert live album.
   - domains_id_label: Each row maps the MID of a Freebase domain to its label.
+    - Example
+      - >/m/05v4pmy, geology, 77
+    - Explanation
+      - The object with MID "/m/05v4pmy" in Freebase is the domain "geology", and has id "77" in our dataset.
   - types_id_label: Each row maps the MID of a Freebase type to its label.
+    - Example
+      - >/m/01xljxh, /government/political_party, 147
+    - Explanation
+      - The object with MID "/m/01xljxh" in Freebase is the type "/government/political_party", and has id "147" in our dataset.
   - entities_id_label: Each row maps the MID of a Freebase entity to its label.
+    - Example
+      - >/g/11b78qtr5m, Viroliano Tries Jazz, 2234
+    - Explanation
+      - The entity with MID "/g/11b78qtr5m" in Freebase is "Viroliano Tries Jazz", and has id "2234" in our dataset.
   - properties_id_label: Each row maps the MID of a Freebase property to its label.
+    - Example
+      - >/m/010h8tp2, /comedy/comedy_group/members, 47178867
+    - Explanation
+      - The object with MID "/m/010h8tp2" in Freebase is a property(relation/edge), it has label "/comedy/comedy_group/members" and has id "47178867" in our dataset.
   - uri_original2simplified and uri_simplified2original: The mapping between original URI and simplified URI and the mapping between simplified URI and original URI repectively.
+    - Example
+      - uri_original2simplified >"<http://rdf.freebase.com/ns/type.property.unique>": "/type/property/unique"
+      - uri_simplified2original >"/type/property/unique": "<http://rdf.freebase.com/ns/type.property.unique>"
+    - Explanation
+      - The URI "<http://rdf.freebase.com/ns/type.property.unique>" in the original Freebase RDF dataset is simplified into "/type/property/unique" in our dataset. 
+      - The identifier "/type/property/unique" in our dataset has URI <http://rdf.freebase.com/ns/type.property.unique> in the original Freebase RDF dataset.
+
 
 
 
