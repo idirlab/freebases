@@ -408,11 +408,13 @@ Another way of evaluation embedding models is to find their performance on tripl
     <td class="tg-c3ow">0.87</td>
     <td class="tg-c3ow">0.86</td>
   </tr>
+<thead>
   <tr>
-    <td class="tg-c3ow"></td>
-    <td class="tg-7btt" colspan="4">consistent t</td>
-    <td class="tg-7btt" colspan="4">inconsistent t</td>
+    <th class="tg-c3ow"></th>
+    <th class="tg-7btt" colspan="4">consistent t</th>
+    <th class="tg-7btt" colspan="4">inconsistent t</th>
   </tr>
+</thead>
   <tr>
     <td class="tg-c3ow">Model</td>
     <td class="tg-c3ow">Precision</td>
