@@ -497,6 +497,12 @@ Another way of evaluation embedding models is to find their performance on tripl
 
 The experiments on type filtering and triple classification were done using LibKGE framework. ([Broscheit et al.,2020](https://aclanthology.org/2020.emnlp-demos.22.pdf))
 
+## Scripts
+### Data Cleaning Scripts
+
+
+### Experiments Scripts
+
 
 
 ## License
