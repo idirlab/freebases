@@ -1,7 +1,6 @@
 ## Datasets
 
 We have provided four variants of Freebase dataset. **These datasets can be downloaded from this [link](https://www.dropbox.com/s/idzqsh1a34swaz0/Freebases.zip?dl=0).**
-**The mapping between original URI and simplified URI is now added to the data.**
 
 The detailed statistics of these four variants are shown in the table below. 
 
@@ -24,6 +23,7 @@ For each dataset, we made three kinds of files available:
   - types_id_label: Each row maps the MID of a Freebase type to its label.
   - entities_id_label: Each row maps the MID of a Freebase entity to its label.
   - properties_id_label: Each row maps the MID of a Freebase property to its label.
+  - uri_original2simplified and uri_simplified2original: The mapping between original URI and simplified URI and the mapping between simplified URI and original URI repectively.
 - Subject matter triples file: fbx, where x ∈ 1, 2, 3, 4 (one file for each variant)
 - Type system file:
   - freebase_endtypes: Each row maps an edge type to its required subject type and object type.
