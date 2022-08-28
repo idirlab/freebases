@@ -322,6 +322,176 @@ The results of these experiments on FB15K and FB15K-237 dataset are shown in the
 
 Another way of evaluation embedding models is to find their performance on triple classification. This task is the binary classification of triples regarding whether they are true or false facts. The results of our triple classification task are shown in the tables below.
 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-7btt" colspan="4">consistent h</th>
+    <th class="tg-7btt" colspan="4">inconsistent h</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">Model</td>
+    <td class="tg-c3ow">Precision</td>
+    <td class="tg-c3ow">Recall</td>
+    <td class="tg-c3ow">Acc</td>
+    <td class="tg-c3ow">F1</td>
+    <td class="tg-c3ow">Precision</td>
+    <td class="tg-c3ow">Recall</td>
+    <td class="tg-c3ow">Acc</td>
+    <td class="tg-c3ow">F1</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">RESCAL</td>
+    <td class="tg-c3ow">0.59</td>
+    <td class="tg-c3ow">0.37</td>
+    <td class="tg-c3ow">0.55</td>
+    <td class="tg-c3ow">0.45</td>
+    <td class="tg-c3ow">0.95</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.89</td>
+    <td class="tg-c3ow">0.89</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">TransE</td>
+    <td class="tg-c3ow">0.52</td>
+    <td class="tg-c3ow">0.59</td>
+    <td class="tg-c3ow">0.52</td>
+    <td class="tg-c3ow">0.55</td>
+    <td class="tg-c3ow">0.81</td>
+    <td class="tg-c3ow">0.69</td>
+    <td class="tg-c3ow">0.76</td>
+    <td class="tg-c3ow">0.74</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">DistMult</td>
+    <td class="tg-c3ow">0.53</td>
+    <td class="tg-c3ow">0.51</td>
+    <td class="tg-c3ow">0.53</td>
+    <td class="tg-c3ow">0.52</td>
+    <td class="tg-c3ow">0.94</td>
+    <td class="tg-c3ow">0.87</td>
+    <td class="tg-c3ow">0.91</td>
+    <td class="tg-c3ow">0.90</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">ComplEx</td>
+    <td class="tg-c3ow">0.54</td>
+    <td class="tg-c3ow">0.48</td>
+    <td class="tg-c3ow">0.53</td>
+    <td class="tg-c3ow">0.51</td>
+    <td class="tg-c3ow">0.94</td>
+    <td class="tg-c3ow">0.88</td>
+    <td class="tg-c3ow">0.91</td>
+    <td class="tg-c3ow">0.91</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">ConvE</td>
+    <td class="tg-c3ow">0.54</td>
+    <td class="tg-c3ow">0.53</td>
+    <td class="tg-c3ow">0.54</td>
+    <td class="tg-c3ow">0.53</td>
+    <td class="tg-c3ow">0.57</td>
+    <td class="tg-c3ow">0.72</td>
+    <td class="tg-c3ow">0.59</td>
+    <td class="tg-c3ow">0.64</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">RotatE</td>
+    <td class="tg-c3ow">0.52</td>
+    <td class="tg-c3ow">0.53</td>
+    <td class="tg-c3ow">0.52</td>
+    <td class="tg-c3ow">0.52</td>
+    <td class="tg-c3ow">0.89</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.87</td>
+    <td class="tg-c3ow">0.86</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow"></td>
+    <td class="tg-7btt" colspan="4">consistent t</td>
+    <td class="tg-7btt" colspan="4">inconsistent t</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Model</td>
+    <td class="tg-c3ow">Precision</td>
+    <td class="tg-c3ow">Recall</td>
+    <td class="tg-c3ow">Acc</td>
+    <td class="tg-c3ow">F1</td>
+    <td class="tg-c3ow">Precision</td>
+    <td class="tg-c3ow">Recall</td>
+    <td class="tg-c3ow">Acc</td>
+    <td class="tg-c3ow">F1</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">RESCAL</td>
+    <td class="tg-c3ow">0.64</td>
+    <td class="tg-c3ow">0.45</td>
+    <td class="tg-c3ow">0.60</td>
+    <td class="tg-c3ow">0.53</td>
+    <td class="tg-c3ow">0.95</td>
+    <td class="tg-c3ow">0.86</td>
+    <td class="tg-c3ow">0.91</td>
+    <td class="tg-c3ow">0.90</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">TransE</td>
+    <td class="tg-c3ow">0.58</td>
+    <td class="tg-c3ow">0.54</td>
+    <td class="tg-c3ow">0.57</td>
+    <td class="tg-c3ow">0.56</td>
+    <td class="tg-c3ow">0.90</td>
+    <td class="tg-c3ow">0.82</td>
+    <td class="tg-c3ow">0.86</td>
+    <td class="tg-c3ow">0.86</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">DistMult</td>
+    <td class="tg-c3ow">0.59</td>
+    <td class="tg-c3ow">0.55</td>
+    <td class="tg-c3ow">0.58</td>
+    <td class="tg-c3ow">0.57</td>
+    <td class="tg-c3ow">0.95</td>
+    <td class="tg-c3ow">0.89</td>
+    <td class="tg-c3ow">0.92</td>
+    <td class="tg-c3ow">0.92</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">ComplEx</td>
+    <td class="tg-c3ow">0.60</td>
+    <td class="tg-c3ow">0.56</td>
+    <td class="tg-c3ow">0.59</td>
+    <td class="tg-c3ow">0.58</td>
+    <td class="tg-c3ow">0.95</td>
+    <td class="tg-c3ow">0.90</td>
+    <td class="tg-c3ow">0.93</td>
+    <td class="tg-c3ow">0.92</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">ConvE</td>
+    <td class="tg-c3ow">0.62</td>
+    <td class="tg-c3ow">0.41</td>
+    <td class="tg-c3ow">0.58</td>
+    <td class="tg-c3ow">0.49</td>
+    <td class="tg-c3ow">0.95</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.89</td>
+    <td class="tg-c3ow">0.88</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">RotatE</td>
+    <td class="tg-c3ow">0.60</td>
+    <td class="tg-c3ow">0.47</td>
+    <td class="tg-c3ow">0.58</td>
+    <td class="tg-c3ow">0.53</td>
+    <td class="tg-c3ow">0.87</td>
+    <td class="tg-c3ow">0.78</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.82</td>
+  </tr>
+</tbody>
+</table>
 
 
 
