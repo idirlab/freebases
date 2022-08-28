@@ -530,7 +530,7 @@ The experiments on type filtering and triple classification were done using LibK
 
 ## License
 
-The dataset and code is made available under the [CC0 1.0 Universal](
+The dataset and code is made available under the [CC0 1.0 Universal](https://github.com/idirlab/freebases/blob/main/LICENSE)
 
 [Freebase Data Dumps](https://developers.google.com/freebase/data) are provided free of charge for any purpose. They are distributed, like Freebase itself, under the [Creative Commons Attribution (aka CC-BY)](http://creativecommons.org/licenses/by/2.5/) and use is subject to the [Terms of Service](https://developers.google.com/freebase/terms). The Freebase/Wikidata ID mappings are provided under CC0 and can be used without restrictions.
 
