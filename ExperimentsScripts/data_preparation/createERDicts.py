@@ -50,8 +50,8 @@ def write_to_file_dic(dic, filename):
 
 if __name__ =="__main__":
     filename = "FB2.txt"
-    """dicR = relation_dict(filename)
-    write_to_file_dic(dicR, "relation2id.txt")"""
+    dicR = relation_dict(filename)
+    write_to_file_dic(dicR, "relation2id.txt")
 
     dicE = entity_dict(filename)
     write_to_file_dic(dicE, "entity2id.txt")
