@@ -41,7 +41,7 @@ Four clean variants of Freebase dataset are provided by inclusion/exclusion of v
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">FB1</td>
+    <td class="tg-0pky">FB-CVT-REV</td>
     <td class="tg-c3ow">removed</td>
     <td class="tg-c3ow">removed</td>
     <td class="tg-c3ow">39,732,008</td>
@@ -49,7 +49,7 @@ Four clean variants of Freebase dataset are provided by inclusion/exclusion of v
     <td class="tg-c3ow">103,324,039</td>
   </tr>
   <tr>
-    <td class="tg-0pky">FB2</td>
+    <td class="tg-0pky">FB-CVT+REV</td>
     <td class="tg-c3ow">removed</td>
     <td class="tg-c3ow">retained</td>
     <td class="tg-c3ow">39,745,618</td>
@@ -57,7 +57,7 @@ Four clean variants of Freebase dataset are provided by inclusion/exclusion of v
     <td class="tg-c3ow">235,307,422</td>
   </tr>
   <tr>
-    <td class="tg-0pky">FB3</td>
+    <td class="tg-0pky">FB+CVT-REV</td>
     <td class="tg-c3ow">retained</td>
     <td class="tg-c3ow">removed</td>
     <td class="tg-c3ow">59,894,890</td>
@@ -65,7 +65,7 @@ Four clean variants of Freebase dataset are provided by inclusion/exclusion of v
     <td class="tg-c3ow">134,213,735</td>
   </tr>
   <tr>
-    <td class="tg-0pky">FB4</td>
+    <td class="tg-0pky">FB+CVT+REV</td>
     <td class="tg-c3ow">retained</td>
     <td class="tg-c3ow">retained</td>
     <td class="tg-c3ow">59,896,902</td>
