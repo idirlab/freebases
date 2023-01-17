@@ -1,11 +1,11 @@
 
-# Variants of Freebase for Robust Development of Intelligent Tasks on Knowledge Graphs
+# Datasets for Robust Development and Evaluation of Knowledge Graph Completion Methods
 
 ## Overview
 
-This repository contains the dataset, preprocessing scripts, and experiment results to the paper [Creating Variants of Freebase for Robust Development of Intelligent Tasks on Knowledge Graphs](https://openreview.net/pdf?id=ikw7gqAGz7A), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Reverse Triples, Mediator Nodes, and Type System) of Freebase, a large-scale, open-domain knowledge graph, on intelligent tasks such as link prediction, graph query system, and graph-to-text generation. 
+This repository contains the dataset, preprocessing scripts, and experiment results to the paper [Datasets for Robust Development and Evaluation of Knowledge Graph Completion Methods](https://openreview.net/pdf?id=ikw7gqAGz7A), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Reverse Triples, Mediator Nodes, and Type System) of Freebase, a large-scale, open-domain knowledge graph, on intelligent tasks such as link prediction, graph query system, and graph-to-text generation. 
 
-Freebase is amongst the largest public cross-domain KGs that store common facts. It possesses several data modeling idiosyncrasies rarely found in comparable datasets such as Wikidata, YAGO, and so on. Though closed in 2015, Freebase still serves as an important knowledge graph in intelligent tasks. We checked all full-length papers that use datasets commonly used for link prediction and were published in 12 top conferences during their latest versions (10 conferences in 2022, and 2 conferences in 2021). The 12 conferences are AAAL, IJCAI, WWW, KDD, ICML, ACL, EMNLP, NAACL, SIGIR, NeurIPS, SIGMOD, and VLDB. That amounts to 63 papers. 57 out of the 63 papers used datasets produced from Freebase, while only 9 used datasets from Wikidata. The papers and the datasets used in the papers are listed in file **papers.xlsx**. 
+Freebase is amongst the largest public cross-domain KGs that store common facts. It possesses several data modeling idiosyncrasies rarely found in comparable datasets such as Wikidata, YAGO, and so on. Though closed in 2015, Freebase still serves as an important knowledge graph in intelligent tasks. We checked all full-length papers that use datasets commonly used for link prediction and were published in 12 top conferences during their latest versions, in 2022. The 12 conferences are AAAL, IJCAI, WWW, KDD, ICML, ACL, EMNLP, NAACL, SIGIR, NeurIPS, SIGMOD, and VLDB. That amounts to 53 papers. 48 out of the 53 papers used datasets produced from Freebase, while only 8 used datasets from Wikidata. The papers and the datasets used in the papers are listed in file **papers.xlsx**. 
 
 **Reverse Triples**
 
@@ -24,7 +24,7 @@ Freebase categorizes each topic into one or more types and each type into one do
 
 ## Dataset
 
-Four clean variants of Freebase dataset are provided by inclusion/exclusion of various data modeling idiosyncrasies, which encables researchers to leverage or avoid such features based on the nature of their tasks. **The dataset can be downloaded from this [link](https://www.dropbox.com/s/idzqsh1a34swaz0/Freebases.zip?dl=0).**
+Four variants of Freebase dataset are provided by inclusion/exclusion of various data modeling idiosyncrasies, which encables researchers to leverage or avoid such features based on the nature of their tasks. **The dataset can be downloaded from this [link](https://www.dropbox.com/s/idzqsh1a34swaz0/Freebases.zip?dl=0).**
 
 ### Dataset Statistics
 
@@ -52,9 +52,9 @@ Four clean variants of Freebase dataset are provided by inclusion/exclusion of v
     <td class="tg-0pky">FB-CVT+REV</td>
     <td class="tg-c3ow">removed</td>
     <td class="tg-c3ow">retained</td>
-    <td class="tg-c3ow">39,745,618</td>
-    <td class="tg-c3ow">4,894</td>
-    <td class="tg-c3ow">235,307,422</td>
+    <td class="tg-c3ow">46,077,533</td>
+    <td class="tg-c3ow">5,028</td>
+    <td class="tg-c3ow">238,981,274</td>
   </tr>
   <tr>
     <td class="tg-0pky">FB+CVT-REV</td>
