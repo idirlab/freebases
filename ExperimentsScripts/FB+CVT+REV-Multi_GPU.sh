@@ -23,15 +23,15 @@ dglke_train --model_name DistMult --dataset Freebase --data_path ./data --format
 --eval_interval 100000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --num_thread 4 --no_save_emb --delimiter ,
 
 ################## Script Result #################
-training takes 2661.189035654068 seconds
+training takes 3750.0674629211426 seconds
 -------------- Test result --------------
-Test average MRR : 0.8187715508637831
-Test average MR : 19.18095249042686
-Test average HITS@1 : 0.7778721137093453
-Test average HITS@3 : 0.8429859477145755
-Test average HITS@10 : 0.8908468526460356
+Test average MRR : 0.9270783829999111
+Test average MR : 12.92465452373544
+Test average HITS@1 : 0.9133287111255979
+Test average HITS@3 : 0.9355960375570312
+Test average HITS@10 : 0.9513787297563121
 -----------------------------------------
-testing takes 843.701 seconds
+testing takes 4315.173 seconds
 ##################################################
 
 ###FB4-ComplEx:
