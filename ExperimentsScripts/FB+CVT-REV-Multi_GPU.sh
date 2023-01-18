@@ -60,6 +60,15 @@ nohup  dglke_train --model_name TransR --dataset Freebase --data_path ./data --f
 --rel_part --force_sync_interval 10000 --no_save_emb --delimiter , &
 
 ################## Script Result #################
+training takes 51645.34634184837 seconds
+-------------- Test result --------------
+Test average MRR : 0.6404781157552277
+Test average MR : 47.52457785341662
+Test average HITS@1 : 0.5802951216198057
+Test average HITS@3 : 0.6699268276753092
+Test average HITS@10 : 0.7548086761792441
+-----------------------------------------
+testing takes 1608.461 seconds
 ##################################################
 
 ###FB3-RotatE:
