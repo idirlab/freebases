@@ -41,15 +41,15 @@ dglke_train --model_name ComplEx --dataset Freebase --data_path ./data --format 
 --max_step 360000 --neg_sample_size_eval 1000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --no_save_emb --delimiter ,
 
 ################## Script Result #################
-training takes 3559.9117217063904 seconds
+training takes 6398.788597822189 seconds
 -------------- Test result --------------
-Test average MRR : 0.8993861574131577
-Test average MR : 16.93782000082095
-Test average HITS@1 : 0.8800847035500938
-Test average HITS@3 : 0.9102664226274519
-Test average HITS@10 : 0.9355053688399617
+Test average MRR : 0.9282715949669749
+Test average MR : 13.278827473668326
+Test average HITS@1 : 0.9156255507934878
+Test average HITS@3 : 0.9354588205069724
+Test average HITS@10 : 0.9512246688106973
 -----------------------------------------
-testing takes 845.329 seconds
+testing takes 3239.732 seconds
 ##################################################
 
 ###FB4-RotatE:
