@@ -5,15 +5,15 @@ dglke_train --model_name TransE_l2 --dataset Freebase --data_path ./data --forma
 --neg_sample_size_eval 1000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --no_save_em --delimiter ,
 
 ################## Script Result #################
-training takes 4121.826884031296 seconds
--------------- Test result --------------
-Test average MRR : 0.8062901031247999
-Test average MR : 5.869447170716112
-Test average HITS@1 : 0.7577304987212277
-Test average HITS@3 : 0.8377261029411764
-Test average HITS@10 : 0.8847241048593351
------------------------------------------
-testing takes 278.203 seconds
+#training takes 4121.826884031296 seconds
+#-------------- Test result --------------
+#Test average MRR : 0.8062901031247999
+#Test average MR : 5.869447170716112
+#Test average HITS@1 : 0.7577304987212277
+#Test average HITS@3 : 0.8377261029411764
+#Test average HITS@10 : 0.8847241048593351
+#-----------------------------------------
+#testing takes 278.203 seconds
 ##################################################
 
 ###FB1-DistMult:
@@ -23,15 +23,15 @@ dglke_train --model_name DistMult --dataset Freebase --data_path ./data --format
 --eval_interval 100000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --num_thread 4 --no_save_emb --delimiter ,
 
 ################## Script Result #################
-#training takes 4481.721693754196 seconds				
-#-------------- Test result --------------				
-#Test average MRR : 0.7096351943255073				
-#Test average MR : 69.38829734691518				
-#Test average HITS@1 : 0.6703651926771133				
-#Test average HITS@3 : 0.7306864122159474				
-#Test average HITS@10 : 0.780517281672224				
-#-----------------------------------------				
-#testing takes 1579.544 seconds
+#training takes 3715.882214307785 seconds
+#-------------- Test result --------------
+#Test average MRR : 0.7039633074693323
+#Test average MR : 70.49801813045397
+#Test average HITS@1 : 0.6646061020291185
+#Test average HITS@3 : 0.7246516023908389
+#Test average HITS@10 : 0.7753518341923725
+#-----------------------------------------
+#testing takes 1393.049 seconds
 ##################################################
 
 ###FB1-ComplEx:
