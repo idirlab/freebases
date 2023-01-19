@@ -40,16 +40,16 @@ dglke_train --model_name ComplEx --dataset Freebase --data_path ./data --format 
 --lr 0.1 --num_thread 4 --regularization_coef 2.00E-06 --batch_size_eval 1000 --test -adv --mix_cpu_gpu --num_proc 8 --gpu 0 1 \
 --max_step 360000 --neg_sample_size_eval 1000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --no_save_emb --delimiter ,
 
-################## Script Result #################
-#training takes 5881.848418712616 seconds				
-#-------------- Test result --------------				
-#Test average MRR : 0.7179405798869858				
-#Test average MR : 68.7989690545715				
-#Test average HITS@1 : 0.6812835891974892				
-#Test average HITS@3 : 0.7374767304961805				
-#Test average HITS@10 : 0.7831064406131745				
-#-----------------------------------------				
-#testing takes 1183.343 seconds	
+################## Script Result #################	
+#training takes 6416.189969301224 seconds
+#-------------- Test result --------------
+#Test average MRR : 0.7199696307471516
+#Test average MR : 67.7405051201893
+#Test average HITS@1 : 0.6843133083363196
+#Test average HITS@3 : 0.7385327611875169
+#Test average HITS@10 : 0.783546326899943
+#-----------------------------------------
+#testing takes 1975.424 seconds
 ##################################################
 
 ###FB1-TransR:
