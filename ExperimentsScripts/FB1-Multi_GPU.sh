@@ -1,19 +1,19 @@
 ###FB1_TransE_l2:
 dglke_train --model_name TransE_l2 --dataset Freebase --data_path ./data --format udd_hrt  \
 --data_files entity2id.txt relation2id.txt train.txt valid.txt test.txt --batch_size 1000 --neg_sample_size 200 --hidden_dim 400 --gamma 10 \
---lr 0.1 --regularization_coef 1e-9 --batch_size_eval 1000 --test -adv --mix_cpu_gpu --num_proc 8 --num_thread 4 --gpu 0 1  --max_step 320000 \
+--lr 0.1 --regularization_coef 1e-9 --batch_size_eval 1000 --test -adv --mix_cpu_gpu --num_proc 8 --num_thread 4 --gpu 0 1  --max_step 300000 \
 --neg_sample_size_eval 1000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --no_save_em --delimiter ,
 
 ################## Script Result #################
-#training takes 5023.488492012024 seconds				
-#-------------- Test result --------------				
-#Test average MRR : 0.6864382098795799				
-#Test average MR : 41.81036077167216				
-#Test average HITS@1 : 0.6257576140868235				
-#Test average HITS@3 : 0.7197621933003103				
-#Test average HITS@10 : 0.7996085141889765				
-#-----------------------------------------				
-#testing takes 1165.175 seconds
+training takes 4121.826884031296 seconds
+-------------- Test result --------------
+Test average MRR : 0.8062901031247999
+Test average MR : 5.869447170716112
+Test average HITS@1 : 0.7577304987212277
+Test average HITS@3 : 0.8377261029411764
+Test average HITS@10 : 0.8847241048593351
+-----------------------------------------
+testing takes 278.203 seconds
 ##################################################
 
 ###FB1-DistMult:
