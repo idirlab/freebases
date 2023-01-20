@@ -60,15 +60,15 @@ dglke_train --model_name TransR --dataset Freebase --data_path ./data --format u
 --no_save_emb --delimiter ,
 
 ################## Script Result #################
-#training takes 49449.76291227341 seconds			
-#-------------- Test result --------------			
-#Test average MRR : 0.6363734517471373			
-#Test average MR : 52.251309838161504			
-#Test average HITS@1 : 0.5842527698539663			
-#Test average HITS@3 : 0.6597560858084537			
-#Test average HITS@10 : 0.7330448838412068			
-#-----------------------------------------			
-#testing takes 1595.097 seconds			
+#training takes 53897.413022994995 seconds
+#-------------- Test result --------------
+#Test average MRR : 0.6637842215716784
+#Test average MR : 58.553444463376735
+#Test average HITS@1 : 0.620174277925915
+#Test average HITS@3 : 0.6840944059778006
+#Test average HITS@10 : 0.7431526479113406
+#-----------------------------------------
+#testing takes 2057.536 seconds		
 ##################################################
 
 ###FB1-RotatE:
