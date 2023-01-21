@@ -79,13 +79,13 @@ dglke_train --model_name RotatE --dataset Freebase --data_path ./data --format u
 --force_sync_interval 10000 --no_save_emb --delimiter , 
 
 ################## Script Result #################
-#training takes 25748.069131851196 seconds			
-#-------------- Test result --------------			
-#Test average MRR : 0.45551810443922747			
-#Test average MR : 143.6880176912476			
-#Test average HITS@1 : 0.3999739598391252			
-#Test average HITS@3 : 0.4778791142249549			
-#Test average HITS@10 : 0.5598818294688691			
-#-----------------------------------------			
-#testing takes 1267.891 seconds			
+#training takes 28124.41317129135 seconds
+#-------------- Test result --------------
+#Test average MRR : 0.8041753684305061
+#Test average MR : 75.72160063578387
+#Test average HITS@1 : 0.7805134223349777
+#Test average HITS@3 : 0.8175000887117991
+#Test average HITS@10 : 0.845365264039881
+#-----------------------------------------
+#testing takes 1755.222 seconds		
 ##################################################
