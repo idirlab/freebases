@@ -63,7 +63,7 @@ dglke_train --model_name TransR --dataset Freebase --batch_size 1024 --neg_sampl
 
 ###Freebase86m_RotatE:
 dglke_train --model_name RotatE --dataset Freebase --batch_size 1024 --neg_sample_size 256 \
--de --hidden_dim 200 --gamma 12.0 --lr 0.01 --regularization_coef 1e-7 --batch_size_eval 1000 \
+-de --hidden_dim 200 --gamma 12.0 --lr 0.08 --regularization_coef 1e-7 --batch_size_eval 1000 \
 --test -adv --mix_cpu_gpu --num_proc 8 --gpu 0 1 --max_step 300000 --neg_sample_size_eval 1000 \
 --log_interval 1000 --async_update --rel_part --num_thread 4 --force_sync_interval 10000 --no_save_emb 
 
