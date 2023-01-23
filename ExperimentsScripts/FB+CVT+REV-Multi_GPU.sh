@@ -74,18 +74,18 @@ dglke_train --model_name TransR --dataset Freebase --data_path ./data --format u
 ###FB4-RotatE:
 dglke_train --model_name RotatE --dataset Freebase --data_path ./data --format udd_hrt  \
 --data_files entity2id.txt relation2id.txt train.txt valid.txt test.txt   --batch_size 1024 --neg_sample_size 256 -de \
---hidden_dim 200 --gamma 12.0 --lr 0.01 --regularization_coef 1e-7 --batch_size_eval 1000 --test -adv --mix_cpu_gpu --num_proc 8 \
+--hidden_dim 200 --gamma 12.0 --lr 0.08 --regularization_coef 1e-7 --batch_size_eval 1000 --test -adv --mix_cpu_gpu --num_proc 8 \
 --gpu 0 1 --max_step 300000 --neg_sample_size_eval 1000 --log_interval 1000 --async_update --rel_part --num_thread 4 \
 --force_sync_interval 10000 --no_save_emb --delimiter , 
 
 ################## Script Result #################
-training takes 7725.889139175415 seconds
--------------- Test result --------------
-Test average MRR : 0.7299357109474364
-Test average MR : 33.02714078894227
-Test average HITS@1 : 0.6837280912702414
-Test average HITS@3 : 0.7535836715579973
-Test average HITS@10 : 0.8160462612280308
------------------------------------------
-testing takes 1123.047 seconds		
+#training takes 28276.433941602707 seconds
+#-------------- Test result --------------
+#Test average MRR : 0.9487950328615394
+#Test average MR : 10.263437578078474
+#Test average HITS@1 : 0.9382699680398463
+#Test average HITS@3 : 0.954756613675923
+#Test average HITS@10 : 0.9692953234896697
+#-----------------------------------------
+#testing takes 3210.454 seconds		
 ##################################################
