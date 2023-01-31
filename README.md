@@ -157,10 +157,10 @@ The results of these experiments on our datasets are shown in the table below.
 <thead>
   <tr>
     <th class="tg-0pky"></th>
-    <th class="tg-c3ow" colspan="4">FB1</th>
-    <th class="tg-c3ow" colspan="4">FB2</th>
-    <th class="tg-c3ow" colspan="4">FB3</th>
-    <th class="tg-c3ow" colspan="4">FB4</th>
+    <th class="tg-c3ow" colspan="4">FB-CVT-REV</th>
+    <th class="tg-c3ow" colspan="4">FB-CVT+REV</th>
+    <th class="tg-c3ow" colspan="4">FB+CVT-REV</th>
+    <th class="tg-c3ow" colspan="4">FB+CVT+REV</th>
   </tr>
 </thead>
 <tbody>
@@ -185,41 +185,41 @@ The results of these experiments on our datasets are shown in the table below.
   </tr>
   <tr>
     <td class="tg-0pky">TransE</td>
-    <td class="tg-c3ow">0.686</td>
-    <td class="tg-c3ow">41.810</td>
-    <td class="tg-c3ow">0.625</td>
-    <td class="tg-c3ow">0.799</td>
-    <td class="tg-0pky">0.958</td>
-    <td class="tg-0pky">3.857</td>
-    <td class="tg-0pky">0.944</td>
-    <td class="tg-0pky">0.980</td>
-    <td class="tg-0pky">0.431</td>
-    <td class="tg-0pky">50.572</td>
-    <td class="tg-0pky">0.339</td>
-    <td class="tg-0pky">0.623</td>
-    <td class="tg-0pky">0.606</td>
-    <td class="tg-0pky">12.542</td>
-    <td class="tg-0pky">0.515</td>
-    <td class="tg-0pky">0.771</td>
+    <td class="tg-c3ow">0.806</td>
+    <td class="tg-c3ow">5.869</td>
+    <td class="tg-c3ow">0.757</td>
+    <td class="tg-c3ow">0.884</td>
+    <td class="tg-0pky">0.976</td>
+    <td class="tg-0pky">1.529</td>
+    <td class="tg-0pky">0.968</td>
+    <td class="tg-0pky">0.988</td>
+    <td class="tg-0pky">0.781</td>
+    <td class="tg-0pky">4.850</td>
+    <td class="tg-0pky">0.708</td>
+    <td class="tg-0pky">0.902</td>
+    <td class="tg-0pky">0.970</td>
+    <td class="tg-0pky">1.464</td>
+    <td class="tg-0pky">0.957</td>
+    <td class="tg-0pky">0.989</td>
   </tr>
   <tr>
     <td class="tg-0pky">DistMult</td>
-    <td class="tg-c3ow">0.709</td>
-    <td class="tg-c3ow">69.388</td>
-    <td class="tg-c3ow">0.670</td>
-    <td class="tg-c3ow">0.780</td>
-    <td class="tg-0pky">0.965</td>
-    <td class="tg-0pky">6.059</td>
-    <td class="tg-0pky">0.956</td>
-    <td class="tg-0pky">0.979</td>
-    <td class="tg-0pky">0.408</td>
-    <td class="tg-0pky">109.193</td>
-    <td class="tg-0pky">0.318</td>
-    <td class="tg-0pky">0.581</td>
-    <td class="tg-0pky">0.818</td>
-    <td class="tg-0pky">19.180</td>
-    <td class="tg-0pky">0.777</td>
-    <td class="tg-0pky">0.890</td>
+    <td class="tg-c3ow">0.703</td>
+    <td class="tg-c3ow">70.498</td>
+    <td class="tg-c3ow">0.664</td>
+    <td class="tg-c3ow">0.775</td>
+    <td class="tg-0pky">0.952</td>
+    <td class="tg-0pky">9.239</td>
+    <td class="tg-0pky">0.941</td>
+    <td class="tg-0pky">0.970</td>
+    <td class="tg-0pky">0.612</td>
+    <td class="tg-0pky">81.841</td>
+    <td class="tg-0pky">0.562</td>
+    <td class="tg-0pky">0.704</td>
+    <td class="tg-0pky">0.927</td>
+    <td class="tg-0pky">12.924</td>
+    <td class="tg-0pky">0.913</td>
+    <td class="tg-0pky">0.951</td>
   </tr>
   <tr>
     <td class="tg-0pky">ComplEx</td>
@@ -453,7 +453,7 @@ The experiments on triple classification were done using LibKGE framework. ([Bro
   ./FBDataDump.sh mysql_username mysql_password
   ``
 
-    After running FBDataDump.sh, you may want to run one of the four scripts provided for each variants. All these four scripts detach the subject matter triples from  the metadata and administrative triples. In addition, all these scripts create a type system for the final dataset. Command to run **FBx.sh**, where x ∈ {1,2,3,4}:
+    After running FBDataDump.sh, you may want to run one of the four scripts provided for each variants. All these four scripts detach the subject matter triples from  the metadata and administrative triples. In addition, all these scripts create a type system for the final dataset. Command to run **FBx.sh**, where x ∈ {1,2,3,4}: 
 
   ``
   ./FBx.sh mysql_username mysql_password
