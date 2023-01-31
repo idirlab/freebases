@@ -1,9 +1,9 @@
 
-# Datasets for Robust Development and Evaluation of Knowledge Graph Completion Methods
+# Comprehensive Analysis of Freebase and Creation of Datasets for Robust Evaluation of Knowledge Graph Completion Methods
 
 ## Overview
 
-This repository contains the dataset, preprocessing scripts, and experiment results to the paper [Datasets for Robust Development and Evaluation of Knowledge Graph Completion Methods](https://openreview.net/pdf?id=ikw7gqAGz7A), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Reverse Triples, Mediator Nodes, and Type System) of Freebase, a large-scale, open-domain knowledge graph, on intelligent tasks such as link prediction, graph query system, and graph-to-text generation. 
+This repository contains the dataset, preprocessing scripts, and experiment results to the paper [Comprehensive Analysis of Freebase and Creation of Datasets for Robust Evaluation of Knowledge Graph Completion Methods](https://openreview.net/pdf?id=ikw7gqAGz7A), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Reverse Triples, Mediator Nodes, and Type System) of Freebase, a large-scale, open-domain knowledge graph on Knowledge Graph Completion tasks such as link prediction. 
 
 Freebase is amongst the largest public cross-domain KGs that store common facts. It possesses several data modeling idiosyncrasies rarely found in comparable datasets such as Wikidata, YAGO, and so on. Though closed in 2015, Freebase still serves as an important knowledge graph in intelligent tasks. We checked all full-length papers that use datasets commonly used for link prediction and were published in 12 top conferences during their latest versions, in 2022. The 12 conferences are AAAL, IJCAI, WWW, KDD, ICML, ACL, EMNLP, NAACL, SIGIR, NeurIPS, SIGMOD, and VLDB. That amounts to 53 papers. 48 out of the 53 papers used datasets produced from Freebase, while only 8 used datasets from Wikidata. The papers and the datasets used in the papers are listed in file **papers.xlsx**. 
 
@@ -44,9 +44,9 @@ Four variants of Freebase dataset are provided by inclusion/exclusion of various
     <td class="tg-0pky">FB-CVT-REV</td>
     <td class="tg-c3ow">removed</td>
     <td class="tg-c3ow">removed</td>
-    <td class="tg-c3ow">39,732,008</td>
-    <td class="tg-c3ow">2,891</td>
-    <td class="tg-c3ow">103,324,039</td>
+    <td class="tg-c3ow">46,069,321</td>
+    <td class="tg-c3ow">3,055</td>
+    <td class="tg-c3ow">125,124,274</td>
   </tr>
   <tr>
     <td class="tg-0pky">FB-CVT+REV</td>
@@ -78,12 +78,17 @@ Four variants of Freebase dataset are provided by inclusion/exclusion of various
 ### Dataset Details
 The dataset consists of the four variants of Freebase dataset as well as related mapping/support files. For each variant, we made three kinds of files available:
 - **Subject matter triples file**
-  - *fbx* 
-    where x ∈ 1, 2, 3, 4 (one file for each variant). Subject matter triples are the triples belong to subject matters domains—domains describing real-world facts.
-    - Example
-      - >/g/112yfy2xr, /music/album/release_type, /m/02lx2r
+  - *fb+/-CVT+/-REV* 
+    One folder for each variant. In each folder there are 5 files: train.txt, valid.txt, test.txt, entity2id.txt, relation2id.txt
+    Subject matter triples are the triples belong to subject matters domains—domains describing real-world facts.
+    - Example of a row in train.txt, valid.txt, and test.txt
+      - > 2, 192, 0 
+    - Example of a row in entity2id.txt: 
+      - /g/112yfy2xr, 2 
+    - Example of a row in relation2id.txt: 
+      - /music/album/release_type, 192 
     - Explaination
-      - "/g/112yfy2xr" and "/m/02lx2r" are the MID of the subject entity and object entity, respectively. "/music/album/release_type" is the realtionship between the two entities. 
+      - "/g/112yfy2xr" and "/m/02lx2r" are the MID of the subject entity and object entity, respectively. "/music/album/release_type" is the realtionship between the two entities. 2, 192, and 0 are the IDs assigned by the authors to the objects. 
 - **Type system file**
   - *freebase_endtypes*: Each row maps an edge type to its required subject type and object type.
     - Example
@@ -147,7 +152,7 @@ We conducted all the link prediction experiments on four datasets using DGL-KE f
 
 The hyperparameters used for each experiment, its training/test time, and more details can be found in the script provided for each dataset. 
 
-The results of these experiments on FB1, FB2, FB3, and FB4 dataset are shown in the table below. 
+The results of these experiments on our datasets are shown in the table below. 
 <table class="tg">
 <thead>
   <tr>
