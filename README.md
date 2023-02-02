@@ -24,7 +24,7 @@ Freebase categorizes each topic into one or more types and each type into one do
 
 ## Dataset
 
-Four variants of Freebase dataset are provided by inclusion/exclusion of various data modeling idiosyncrasies, which encables researchers to leverage or avoid such features based on the nature of their tasks. **The dataset can be downloaded from this [link](https://www.dropbox.com/s/idzqsh1a34swaz0/Freebases.zip?dl=0).**
+Four variants of Freebase dataset are provided by inclusion/exclusion of various data modeling idiosyncrasies, which encables researchers to leverage or avoid such features based on the nature of their tasks. **The dataset can be downloaded from this [link](https://www.dropbox.com/s/p0m9mvios7dbhys/freebases.zip?dl=0).**
 
 ### Dataset Statistics
 
