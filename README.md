@@ -242,41 +242,41 @@ The results of these experiments on our datasets are shown in the table below.
   </tr>
     <tr>
     <td class="tg-0pky">TransR</td>
-    <td class="tg-c3ow">0.717</td>
-    <td class="tg-c3ow">68.798</td>
-    <td class="tg-c3ow">0.681</td>
-    <td class="tg-c3ow">0.783</td>
-    <td class="tg-0pky">0.970</td>
-    <td class="tg-0pky">5.567</td>
-    <td class="tg-0pky">0.964</td>
-    <td class="tg-0pky">0.981</td>
-    <td class="tg-0pky">0.510</td>
-    <td class="tg-0pky">104.317</td>
-    <td class="tg-0pky">0.439</td>
-    <td class="tg-0pky">0.635</td>
-    <td class="tg-0pky">0.899</td>
-    <td class="tg-0pky">16.937</td>
-    <td class="tg-0pky">0.880</td>
+    <td class="tg-c3ow">0.663</td>
+    <td class="tg-c3ow">58.553</td>
+    <td class="tg-c3ow">0.620</td>
+    <td class="tg-c3ow">0.743</td>
+    <td class="tg-0pky">0.944</td>
+    <td class="tg-0pky">5.982</td>
+    <td class="tg-0pky">0.931</td>
+    <td class="tg-0pky">0.967</td>
+    <td class="tg-0pky">0.640</td>
+    <td class="tg-0pky">47.524</td>
+    <td class="tg-0pky">0.580</td>
+    <td class="tg-0pky">0.754</td>
     <td class="tg-0pky">0.935</td>
+    <td class="tg-0pky">6.071</td>
+    <td class="tg-0pky">0.916</td>
+    <td class="tg-0pky">0.969</td>
   </tr>
   <tr>
     <td class="tg-0pky">RotatE</td>
-    <td class="tg-c3ow">0.455</td>
-    <td class="tg-c3ow">143.688</td>
-    <td class="tg-c3ow">0.399</td>
-    <td class="tg-c3ow">0.559</td>
-    <td class="tg-0pky">0.938</td>
-    <td class="tg-0pky">13.513</td>
-    <td class="tg-0pky">0.926</td>
+    <td class="tg-c3ow">0.804</td>
+    <td class="tg-c3ow">75.721</td>
+    <td class="tg-c3ow">0.780</td>
+    <td class="tg-c3ow">0.845</td>
+    <td class="tg-0pky">0.962</td>
+    <td class="tg-0pky">10.431</td>
     <td class="tg-0pky">0.956</td>
-    <td class="tg-0pky">0.198</td>
-    <td class="tg-0pky">195.001</td>
-    <td class="tg-0pky">0.147</td>
-    <td class="tg-0pky">0.292</td>
-    <td class="tg-0pky">0.729</td>
-    <td class="tg-0pky">33.027</td>
-    <td class="tg-0pky">0.683</td>
-    <td class="tg-0pky">0.816</td>
+    <td class="tg-0pky">0.974</td>
+    <td class="tg-0pky">0.736</td>
+    <td class="tg-0pky">68.436</td>
+    <td class="tg-0pky">0.699</td>
+    <td class="tg-0pky">0.807</td>
+    <td class="tg-0pky">0.948</td>
+    <td class="tg-0pky">10.263</td>
+    <td class="tg-0pky">0.938</td>
+    <td class="tg-0pky">0.969</td>
   </tr>
 </tbody>
 </table>
