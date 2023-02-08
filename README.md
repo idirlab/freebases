@@ -223,22 +223,22 @@ The results of these experiments on our datasets are shown in the table below.
   </tr>
   <tr>
     <td class="tg-0pky">ComplEx</td>
-    <td class="tg-c3ow">0.717</td>
-    <td class="tg-c3ow">68.798</td>
-    <td class="tg-c3ow">0.681</td>
+    <td class="tg-c3ow">0.719</td>
+    <td class="tg-c3ow">67.740</td>
+    <td class="tg-c3ow">0.684</td>
     <td class="tg-c3ow">0.783</td>
-    <td class="tg-0pky">0.970</td>
-    <td class="tg-0pky">5.567</td>
-    <td class="tg-0pky">0.964</td>
-    <td class="tg-0pky">0.981</td>
-    <td class="tg-0pky">0.510</td>
-    <td class="tg-0pky">104.317</td>
-    <td class="tg-0pky">0.439</td>
-    <td class="tg-0pky">0.635</td>
-    <td class="tg-0pky">0.899</td>
-    <td class="tg-0pky">16.937</td>
-    <td class="tg-0pky">0.880</td>
-    <td class="tg-0pky">0.935</td>
+    <td class="tg-0pky">0.958</td>
+    <td class="tg-0pky">8.437</td>
+    <td class="tg-0pky">0.950</td>
+    <td class="tg-0pky">0.972</td>
+    <td class="tg-0pky">0.624</td>
+    <td class="tg-0pky">83.205</td>
+    <td class="tg-0pky">0.577</td>
+    <td class="tg-0pky">0.708</td>
+    <td class="tg-0pky">0.928</td>
+    <td class="tg-0pky">13.278</td>
+    <td class="tg-0pky">0.915</td>
+    <td class="tg-0pky">0.951</td>
   </tr>
     <tr>
     <td class="tg-0pky">TransR</td>
