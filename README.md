@@ -1,5 +1,5 @@
 
-# Comprehensive Analysis of Freebase and Creation of Datasets for Robust Evaluation of Knowledge Graph Completion Methods
+# Creation of Datasets for Robust Evaluation of Knowledge Graph Completion Methods
 
 ## Overview
 
