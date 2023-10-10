@@ -479,7 +479,7 @@ The experiments on triple classification were done using LibKGE framework. ([Bro
   ``
 - If you need to remove all the reverse triples as well as all the CVT nodes, you can run **FB1.sh**.
 
-- To keep the reverse triples but to remove the CVT nodes, you can run **FB2.sh**.
+- To keep the reverse triples but remove the CVT nodes, you can run **FB2.sh**.
 
 - To keep the CVT nodes but to remove the reverse triples, you can run **FB3.sh**.
 
@@ -488,7 +488,7 @@ The experiments on triple classification were done using LibKGE framework. ([Bro
 
 ### Experiments Scripts
 
-We did expeiments on the four variants of Freebase as well as FB15K and FB-15K-237 using link prediction models like TransE, DistMult, ComplEx, RotatE, etc. The scripts to run the experiments are at ExperimentsScripts/ ending with .sh. An example of running DistMult model on FB1 is as below.
+We did experiments on the four variants of Freebase as well as FB15K and FB-15K-237 using link prediction models like TransE, DistMult, ComplEx, RotatE, etc. The scripts to run the experiments are at ExperimentsScripts/ ending with .sh. An example of running the DistMult model on FB1 is as below.
 
 ``
 dglke_train --model_name DistMult --dataset Freebase --data_path ./data --format udd_hrt  \
@@ -497,9 +497,14 @@ dglke_train --model_name DistMult --dataset Freebase --data_path ./data --format
 --eval_interval 100000 --log_interval 1000 --async_update --rel_part --force_sync_interval 10000 --num_thread 4 --no_save_emb --delimiter ,
 ``
 
+
+### Related Work
+Please feel free to check out another paper of ours related to this topic: [Realistic re-evaluation of knowledge graph completion methods: An experimental study](https://dl.acm.org/doi/pdf/10.1145/3318464.3380599)
+
+
 ## License
 
-The dataset and code is made available under the [CC0 1.0 Universal](https://github.com/idirlab/freebases/blob/main/LICENSE).
+The dataset and code are made available under the [CC0 1.0 Universal](https://github.com/idirlab/freebases/blob/main/LICENSE).
 
 Note: [Freebase Data Dumps](https://developers.google.com/freebase) is provided free of charge for any purpose. It is distributed under the [Creative Commons Attribution (aka CC-BY)](http://creativecommons.org/licenses/by/2.5/) and the usage is subject to the [Terms of Service](https://developers.google.com/freebase/terms). 
 
