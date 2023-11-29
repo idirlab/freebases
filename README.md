@@ -3,18 +3,18 @@
 
 ## Overview
 
-This repository contains the dataset, preprocessing scripts, and experiment results to the paper [Comprehensive Analysis of Freebase and Dataset Creation for Robust Evaluation of Knowledge Graph Link Prediction Models](https://openreview.net/pdf?id=ikw7gqAGz7A), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Reverse Triples, Mediator Nodes, and Type System) of Freebase, a large-scale, open-domain knowledge graph on Knowledge Graph Completion tasks such as link prediction. 
+This repository contains the dataset, preprocessing scripts, and experiment results of the paper [Comprehensive Analysis of Freebase and Dataset Creation for Robust Evaluation of Knowledge Graph Link Prediction Models](https://openreview.net/pdf?id=ikw7gqAGz7A), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Reverse Triples, Mediator Nodes, and Type System) of Freebase, a large-scale, open-domain knowledge graph on Knowledge Graph Completion tasks such as link prediction. 
 
-Freebase is amongst the largest public cross-domain KGs that store common facts. It possesses several data modeling idiosyncrasies rarely found in comparable datasets such as Wikidata, YAGO, and so on. Though closed in 2015, Freebase still serves as an important knowledge graph in intelligent tasks. We checked all full-length papers that use datasets commonly used for link prediction and were published in 12 top conferences during their latest versions, in 2022. The 12 conferences are AAAL, IJCAI, WWW, KDD, ICML, ACL, EMNLP, NAACL, SIGIR, NeurIPS, SIGMOD, and VLDB. That amounts to 53 papers. 48 out of the 53 papers used datasets produced from Freebase, while only 8 used datasets from Wikidata. The papers and the datasets used in the papers are listed in file **papers.xlsx**. 
+Freebase is amongst the largest public cross-domain KGs that store common facts. It possesses several data modeling idiosyncrasies rarely found in comparable datasets such as Wikidata, YAGO, and so on. Though closed in 2015, Freebase still serves as an important knowledge graph in intelligent tasks. We checked all full-length papers that use datasets commonly used for link prediction and were published in 12 top conferences during their latest versions, in 2022. The 12 conferences are AAAL, IJCAI, WWW, KDD, ICML, ACL, EMNLP, NAACL, SIGIR, NeurIPS, SIGMOD, and VLDB. That amounts to 53 papers. 48 out of the 53 papers used datasets produced from Freebase, while only 8 used datasets from Wikidata. The papers and the datasets used in the papers are listed in the file **papers.xlsx**. 
 
 **Reverse Triples**
 
-When a new fact was included into Freebase, it would be added as a pair of reverse triples. For instance, *(A Room With A View,167
+When a new fact was included in Freebase, it would be added as a pair of reverse triples. For instance, *(A Room With A View,167
 /film/film/directed_by, James Ivory)* and *(James Ivory, film/director/film, A Room With A View)* form a pair of reverse triples. They have the same semantic meaning.
 
 **Mediator Nodes**
 
-Mediator nodes, also called CVT nodes, are used in Freebase to represent n-ary relationships. The figure below shows a CVT node connected to an award, a nominee, and a work. This or similar approach is necessary for accurate modeling of the real-world.
+Mediator nodes, also called CVT nodes, are used in Freebase to represent n-ary relationships. The figure below shows a CVT node connected to an award, a nominee, and a work. This or similar approach is necessary for accurate modeling of the real world.
 
 ![image](https://user-images.githubusercontent.com/44850160/187091882-0164271e-423e-4098-9af6-2105dd95f4f5.png)
 
@@ -24,7 +24,7 @@ Freebase categorizes each topic into one or more types and each type into one do
 
 ## Dataset
 
-Four variants of Freebase dataset are provided by inclusion/exclusion of various data modeling idiosyncrasies, which encables researchers to leverage or avoid such features based on the nature of their tasks. **The dataset can be downloaded from this [link](https://www.dropbox.com/s/p0m9mvios7dbhys/freebases.zip?dl=0).**
+Four variants of the Freebase dataset are provided by the inclusion/exclusion of various data modeling idiosyncrasies, which enables researchers to leverage or avoid such features based on the nature of their tasks. **The dataset can be downloaded from this [link](https://zenodo.org/records/7909511).**
 
 ### Dataset Statistics
 
@@ -76,18 +76,18 @@ Four variants of Freebase dataset are provided by inclusion/exclusion of various
 </table>
 
 ### Dataset Details
-The dataset consists of the four variants of Freebase dataset as well as related mapping/support files. For each variant, we made three kinds of files available:
+The dataset consists of the four variants of the Freebase dataset as well as related mapping/support files. For each variant, we made three kinds of files available:
 - **Subject matter triples file**
   - *fb+/-CVT+/-REV* 
-    One folder for each variant. In each folder there are 5 files: train.txt, valid.txt, test.txt, entity2id.txt, relation2id.txt
-    Subject matter triples are the triples belong to subject matters domains—domains describing real-world facts.
+    One folder for each variant. In each folder, there are 5 files: train.txt, valid.txt, test.txt, entity2id.txt, relation2id.txt
+    Subject matter triples are the triples that belong to subject matter domains—domains describing real-world facts.
     - Example of a row in train.txt, valid.txt, and test.txt
       - > 2, 192, 0 
     - Example of a row in entity2id.txt: 
       - /g/112yfy2xr, 2 
     - Example of a row in relation2id.txt: 
       - /music/album/release_type, 192 
-    - Explaination
+    - Explanation
       - "/g/112yfy2xr" and "/m/02lx2r" are the MID of the subject entity and object entity, respectively. "/music/album/release_type" is the realtionship between the two entities. 2, 192, and 0 are the IDs assigned by the authors to the objects. 
 - **Type system file**
   - *freebase_endtypes*: Each row maps an edge type to its required subject type and object type.
@@ -105,12 +105,12 @@ The dataset consists of the four variants of Freebase dataset as well as related
     - Example
       - >/g/11b78qtr5m, /type/object/name, "Viroliano Tries Jazz"@en
     - Explanation
-      - The entity with MID "/g/11b78qtr5m" has name "Viroliano Tries Jazz" in English.
+      - The entity with MID "/g/11b78qtr5m" has the name "Viroliano Tries Jazz" in English.
   - *object_ids*: Each row maps the MID of a Freebase object to its user-friendly identifier.
     - Example
       - >/m/05v3y9r, /type/object/id, "/music/live_album/concert"
     - Explanation
-      - The entity with MID "/m/05v3y9r" can be interpreted by human as a music concert live album.
+      - The entity with MID "/m/05v3y9r" can be interpreted by humans as a music concert live album.
   - *domains_id_label*: Each row maps the MID of a Freebase domain to its label.
     - Example
       - >/m/05v4pmy, geology, 77
@@ -130,8 +130,8 @@ The dataset consists of the four variants of Freebase dataset as well as related
     - Example
       - >/m/010h8tp2, /comedy/comedy_group/members, 47178867
     - Explanation
-      - The object with MID "/m/010h8tp2" in Freebase is a property(relation/edge), it has label "/comedy/comedy_group/members" and has id "47178867" in our dataset.
-  - *uri_original2simplified* and *uri_simplified2original*: The mapping between original URI and simplified URI and the mapping between simplified URI and original URI repectively.
+      - The object with MID "/m/010h8tp2" in Freebase is a property(relation/edge), it has the label "/comedy/comedy_group/members" and has id "47178867" in our dataset.
+  - *uri_original2simplified* and *uri_simplified2original*: The mapping between the original URI and simplified URI and the mapping between simplified URI and original URI respectively.
     - Example
       - *uri_original2simplified*
         - >"<http://rdf.freebase.com/ns/type.property.unique>": "/type/property/unique" 
@@ -148,7 +148,7 @@ The dataset consists of the four variants of Freebase dataset as well as related
 
 ## Experiments & Results
 
-We conducted all the link prediction experiments on four datasets using DGL-KE framework ([Zheng et al.,2020](https://arxiv.org/pdf/2004.08532.pdf)). 
+We conducted all the link prediction experiments on four datasets using the DGL-KE framework ([Zheng et al.,2020](https://arxiv.org/pdf/2004.08532.pdf)). 
 
 The hyperparameters used for each experiment, its training/test time, and more details can be found in the script provided for each dataset. 
 
@@ -282,7 +282,7 @@ The results of these experiments on our datasets are shown in the table below.
 </table>
 
 
-Another way of evaluation embedding models is to find their performance on triple classification. This task is the binary classification of triples regarding whether they are true or false facts. The results of our triple classification task are shown in the tables below.
+Another way of evaluating embedding models is to find their performance on triple classification. This task is the binary classification of triples regarding whether they are true or false facts. The results of our triple classification task are shown in the tables below.
 
 <table class="tg">
 <thead>
@@ -457,7 +457,7 @@ Another way of evaluation embedding models is to find their performance on tripl
 </tbody>
 </table>
 
-The experiments on triple classification were done using LibKGE framework. ([Broscheit et al.,2020](https://aclanthology.org/2020.emnlp-demos.22.pdf))
+The experiments on triple classification were done using the LibKGE framework. ([Broscheit et al.,2020](https://aclanthology.org/2020.emnlp-demos.22.pdf))
 
 ## Scripts
 
@@ -472,7 +472,7 @@ The experiments on triple classification were done using LibKGE framework. ([Bro
   ./FBDataDump.sh mysql_username mysql_password
   ``
 
-    After running FBDataDump.sh, you may want to run one of the four scripts provided for each variants. All these four scripts detach the subject matter triples from  the metadata and administrative triples. In addition, all these scripts create a type system for the final dataset. Command to run **FBx.sh**, where x ∈ {1,2,3,4}: 
+    After running FBDataDump.sh, you may want to run one of the four scripts provided for each variant. All these four scripts detach the subject matter triples from  the metadata and administrative triples. In addition, all these scripts create a type system for the final dataset. Command to run **FBx.sh**, where x ∈ {1,2,3,4}: 
 
   ``
   ./FBx.sh mysql_username mysql_password
