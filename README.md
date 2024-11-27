@@ -1,6 +1,17 @@
 
 # Comprehensive Analysis of Freebase and Dataset Creation for Robust Evaluation of Knowledge Graph Link Prediction Models (ISWC 2023)
-
+## Cite
+If you use our datasets in a scientific publication, we kindly request that you cite the following paper:
+```bibtex
+@inproceedings{shirvani2023comprehensive,
+  title={Comprehensive analysis of freebase and dataset creation for robust evaluation of knowledge graph link prediction models},
+  author={Shirvani-Mahdavi, Nasim and Akrami, Farahnaz and Saeef, Mohammed Samiul and Shi, Xiao and Li, Chengkai},
+  booktitle={International Semantic Web Conference},
+  pages={113--133},
+  year={2023},
+  organization={Springer}
+}
+```
 ## Overview
 
 This repository contains the dataset, preprocessing scripts, and experiment results of the paper [Comprehensive Analysis of Freebase and Dataset Creation for Robust Evaluation of Knowledge Graph Link Prediction Models](https://drive.google.com/file/u/0/d/1evfTheEJ4jVsjvXB-BRj9FE13UmtiQap/view), where we lay out a comprehensive analysis of the challenges and impacts associated with three idiosyncrasies(Reverse Triples, Mediator Nodes, and Type System) of Freebase, a large-scale, open-domain knowledge graph on Knowledge Graph Completion tasks such as link prediction. 
@@ -501,18 +512,6 @@ dglke_train --model_name DistMult --dataset Freebase --data_path ./data --format
 ### Related Work
 Please feel free to check out another paper of ours related to this topic: [Realistic re-evaluation of knowledge graph completion methods: An experimental study](https://dl.acm.org/doi/pdf/10.1145/3318464.3380599)
 
-## Cite
-If you use our datasets in a scientific publication, we kindly request that you cite the following paper:
-```bibtex
-@inproceedings{shirvani2023comprehensive,
-  title={Comprehensive analysis of freebase and dataset creation for robust evaluation of knowledge graph link prediction models},
-  author={Shirvani-Mahdavi, Nasim and Akrami, Farahnaz and Saeef, Mohammed Samiul and Shi, Xiao and Li, Chengkai},
-  booktitle={International Semantic Web Conference},
-  pages={113--133},
-  year={2023},
-  organization={Springer}
-}
-```
 
 ## License
 
